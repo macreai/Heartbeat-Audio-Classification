@@ -201,18 +201,18 @@ Juga terdapat labels sebagai informasi label dari Dangerous Heartbeat Dataset, s
 
 ### Visualisasi Data
 
-![Label Raw Bar Plot](https://github.com/user-attachments/assets/c6178ff6-b297-4155-aa55-48c00a6346f3)<br>
-![Label Raw Pie Chart](https://github.com/user-attachments/assets/4fa0ef5f-0d80-45ad-99c0-0aec9e0a411f)
+![label_raw_bar_plot](https://github.com/user-attachments/assets/930902d8-2e01-46f9-9d61-1354e11b0b1a)<br>
+![label_raw_pie_chart](https://github.com/user-attachments/assets/f8e77d88-0bff-4b25-80a9-cea9ddcedb06)
 
 **Label yang ada pada data penyakit jantung ini terdiri dari Normal, murmur, artifact, extrastole, dan extrahls. Namun, data yang diterima tidak seimbang terlihat Normal lebih dominan.**
 
-![Sample Rate Bar Plot](https://github.com/user-attachments/assets/a0bd2900-08e8-4bee-94f9-c3c7b3e6df99)<br>
-![Sample Rate Pie Chart](https://github.com/user-attachments/assets/334eeb09-565c-4415-ba45-e1f3bf103116)
+![samplerate_raw_bar_plot](https://github.com/user-attachments/assets/89fae8b0-cc7c-4d3f-8231-775acfc8fe15)<br>
+![samplerate_raw_pie_chart](https://github.com/user-attachments/assets/1403f3d1-e870-4a55-98b1-8f2f978bc46c)
 
 **Terdapat beberapa jenis sample rate pada data audio, kita akan mengonversi semuanya ke 44100 agar ekstraksi fitur yang kita lakukan memiliki informasi fitur sample rate yang sama**
 
-![Channel Bar Plot](https://github.com/user-attachments/assets/a3eb5415-811e-45fe-bbc7-00e1f7bc2d8a)<br>
-![Channel Pie Chart](https://github.com/user-attachments/assets/4d25f814-20a1-4be7-995f-c4c9f6b2b3b2)
+![channel_raw_bar_plot](https://github.com/user-attachments/assets/5aeb23d3-7794-47ed-8118-9b196a30ce12)<br>
+![channel_raw_pie_chart](https://github.com/user-attachments/assets/ad7c9462-7658-457e-ab28-0d6dc27a2a89)
 
 **Ditemukan data Wav dengan channel stereo (2) sementara kita hanya memerlukan data mono saja (1) kita akan mengonversi data wav tersebut ke mono agar ekstraksi fitur yang kita lakukan memiliki informasi fitur yang sama yaitu mono**
 
@@ -221,7 +221,7 @@ Juga terdapat labels sebagai informasi label dari Dangerous Heartbeat Dataset, s
 
 **Berikut adalah hasil konversi audio:**
 
-![Sample Rate Converted](https://github.com/user-attachments/assets/3c55877a-d4c1-4acc-8379-cc0e8d8810fd)
+![samplerate_converted](https://github.com/user-attachments/assets/c6264cc4-5d82-49d5-b634-d372e3359ca7)
 
 **Visualisasi di atas menunjukkan bahwa semua audio telah berhasil dikonversi ke 44100 Hz.**
 
@@ -229,7 +229,7 @@ Juga terdapat labels sebagai informasi label dari Dangerous Heartbeat Dataset, s
 
 **Berikut adalah hasil konversi audio dari stereo ke mono:**
 
-![Channel Converted](https://github.com/user-attachments/assets/ffe0c2bf-0f93-4ea4-b9cd-62be325cf919)
+![channel_converted](https://github.com/user-attachments/assets/67daa749-20fc-468a-9d71-8d0b555a7340)
 
 **Dari visualisasi di atas, dapat dilihat bahwa semua channel audio telah berhasil dikonversi ke format Mono.**
 
@@ -262,11 +262,11 @@ def audio_filter_FIR(audio_file, output_file):
 
 **Pada tahap ini kita membandingkan sebelum dan sesudah audio dibersihkan**
 
-![Comparison Noise 1](https://github.com/user-attachments/assets/6bd8f657-b7f5-4652-8d5b-f2952056b097)
+![comparison_1](https://github.com/user-attachments/assets/c570b60a-d659-49dc-9330-de81219c3aa2)
 
 **Mungkin terlihat bahwa raw audio dan denoised audio tidak berbeda, namun perhatikan pada detik ke-10 perbedaan begitu terlihat. Data yang digunakan merupakan data akademis yang sudah bersih, namun tetap dilakukan denoising untuk meningkatkan performa model yang akan dibuat dan simulasi pada data raw yang akan memiliki noise saat deployment. Mari kita lanjutkan pada data audio berikutnya**
 
-![Comparison Noise 2](https://github.com/user-attachments/assets/32edc5fb-aced-4579-9d3a-e5b6434065f5)
+![comparison_2](https://github.com/user-attachments/assets/569331b6-3279-4f55-9766-2041f4ce8bdd)
 
 **Pada data sampel kali ini pun data denoised dan data raw terlihat tidak jauh berbeda, hal ini dibuktikan dari data raw yang memang sudah bersih**
 
@@ -517,7 +517,8 @@ def audio_filter_FIR(audio_file, output_file):
 
   **Berikut adalah hasil dari oversampling balancing data:**
 
-  ![Balanced Data](https://github.com/user-attachments/assets/46b7a75f-bfd3-497b-8166-c7b87cf2b440)
+ 
+  ![balanced_data](https://github.com/user-attachments/assets/8fd6f1aa-276c-40bb-b1f0-b81dbff55651)
 
   **Dengan menggunakan SMOTE, data berhasil seimbang antara data lainnya**
 
