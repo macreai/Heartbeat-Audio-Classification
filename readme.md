@@ -1,4 +1,3 @@
-# Laporan Proyek Machine Learning - Arda Ardiyansyah
 
 ## Domain Proyek
 
