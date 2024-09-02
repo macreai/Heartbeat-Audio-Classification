@@ -1105,8 +1105,10 @@ def audio_filter_FIR(audio_file, output_file):
   - Spesifisitas 95.89%
   - F1-Score 95.93%
   <br>
+  
   **Berikut adalah rata-rata untuk masing-masing metrik:**
   <br>
+  
     - Rata-rata Akurasi: 90.91%
     - Rata-rata Sensitivitas: 90.68%
     - Rata-rata Spesifisitas: 90.61%
@@ -1119,6 +1121,7 @@ def audio_filter_FIR(audio_file, output_file):
   - Precision:  91.58%
   - F1 Score:  91.86%
   <br>
+  
   **Berikut adalah rata-rata dari setiap metrik dalam fold:**
     - **Accuracy:** 91.05%
     - **Sensitivity:** 92.01%
@@ -1137,12 +1140,14 @@ def audio_filter_FIR(audio_file, output_file):
   - Spesifitas 85.06%
   - F1 Score 84.87%
   <br>
+  
   **Berikut adalah rata-rata untuk masing-masing metrik:**
   <br>
-    - **Akurasi:** 79.64%
-    - **Sensitivitas:** 79.31%
-    - **Spesifisitas:** 78.89%
-    - **F1 Score:** 78.39%
+  
+    - Akurasi: 79.64%
+    - Sensitivitas: 79.31%
+    - Spesifisitas: 78.89%
+    - F1 Score: 78.39%
 
 - **Dengan menguji semua model, fold pertama meraih nilai performa paling tinggi yaitu:**
 
@@ -1151,7 +1156,10 @@ def audio_filter_FIR(audio_file, output_file):
   - Precision:  83.05%
   - F1 Score:  83.38%
   <br>
+  
   **Berikut adalah rata-rata dari setiap metrik dalam fold:**
+  <br>
+  
   - **Akurasi:** 76.74%
   - **Sensitivitas:** 78.93%
   - **Presisi:** 77.14%
